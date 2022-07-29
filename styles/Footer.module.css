@@ -1,0 +1,87 @@
+.container {
+  height: 200px;
+  border-top: 3px solid black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-evenly;
+  font-size: 13px;
+  padding: 50px;
+}
+
+.title {
+  color: white;
+  align-items: baseline;
+  width: max-content;
+  padding: 5px;
+  transition: all 1s ease;
+}
+
+.linkTitle {
+  text-decoration: underline;
+  transform-origin: left;
+  transition: all 1s ease;
+}
+
+.linkTitle:hover {
+  transform: scale(1.1);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.linkText{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cardL {
+  /* flex: 2; */
+  display: flex;
+  flex-direction: row;
+}
+
+.cardS {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cardItem {
+  font-size: 14px;
+}
+
+.subtitle{
+  display: flex;
+  justify-content: center;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .title,
+  .linkTitle {
+    font-size: 30px;
+  }
+
+  .cardItem{
+    text-align: center;
+  }
+
+  .container{
+    justify-content: space-around;
+  }
+}
